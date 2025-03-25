@@ -1,0 +1,632 @@
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items */
+    }
+    .table-item {
+        width: 90%; /* Make items take up more width on small screens */
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(222, 135, 196);
+}
+
+  .sub{
+    background-color: #ad9293;
+  }
+
+.header {
+    background-color:rgb(44, 2, 44);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #0c0381;
+    position: relative;
+}
+.header {
+    position: relative; /* Position relative for absolute positioning of circles */
+    padding: 10px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(270deg, rgba(44, 2, 44, 1), rgba(255, 0, 150, 1), rgba(44, 2, 44, 1));
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    overflow: hidden; /* Hide overflow for circles */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8; /* Semi-transparent */
+    animation: float 2s ease-in-out infinite; /* Float animation */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect */
+}
+
+.circle:nth-child(1) {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 0, 0, 0.7); /* Red */
+    top: 20%; /* Adjust position */
+    left: 10%; /* Adjust position */
+    animation-delay: 0s; /* No delay */
+}
+
+.circle:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(0, 255, 0, 0.7); /* Green */
+    top: 30%; /* Adjust position */
+    left: 50%; /* Adjust position */
+    animation-delay: 0.2s; /* Slight delay */
+}
+
+.circle:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0.7); /* Blue */
+    top: 40%; /* Adjust position */
+    left: 70%; /* Adjust position */
+    animation-delay: 0.4s; /* Slight delay */
+}
+
+.circle:nth-child(4) {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(243, 5, 144, 0.7); /* Yellow */
+    top: 50%; /* Adjust position */
+    left: 20%; /* Adjust position */
+    animation-delay: 0.6s; /* Slight delay */
+}
+
+.circle:nth-child(5) {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 165, 0, 0.7); /* Orange */
+    top: 60%; /* Adjust position */
+    left: 80%; /* Adjust position */
+    animation-delay: 0.8s; /* Slight delay */
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(30px, -30px); /* Move up and to the right */
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+
+.home{
+    color: rgb(150, 3, 28);
+    font-size: 20px;
+
+}
+.us{
+    color: rgb(150, 3, 28);
+    font-size: 20px;
+}
+.button-container{
+    display: -moz-popup;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
+  }
+  
+  button {
+    padding: 10px 20px; /* Adjust button size */
+  }
+  
+button.hum:hover{
+    background: linear-gradient(135deg, #d10c8f 0%, #87ceeb 100%); /* Blue gradient on hover */
+    background-size: 200% 200%; /* Keeps the animated gradient */
+    border-color: #1e90ff; /* Changes border color to match */
+    color: rgb(182, 21, 21); /* Ensures text color contrasts well */
+    transform: scale(1.05); /* Slightly enlarges button */
+    transition: all 0.4s ease; /* Smooth transition for hover effect */
+}
+
+button.hum{
+
+    background: linear-gradient(135deg, #7c191c 0%, #fad0c4 100%);
+    background-size: 200% 200%;
+    border: 2px solid #004d40;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 15px;
+    padding: 25px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s, background-position 0.4s;
+    animation: gradient-shift 5s ease infinite;
+    cursor: pointer;
+}
+
+button.con:hover {
+    background: linear-gradient(135deg, #d10c8f 0%, #87ceeb 100%); /* Blue gradient on hover */
+    background-size: 200% 200%; /* Keeps the animated gradient */
+    border-color: #1e90ff; /* Changes border color to match */
+    color: rgb(182, 21, 21); /* Ensures text color contrasts well */
+    transform: scale(1.05); /* Slightly enlarges button */
+    transition: all 0.4s ease; /* Smooth transition for hover effect */
+}
+
+button.con{
+
+    background: linear-gradient(135deg, #7c191c 0%, #fad0c4 100%);
+    background-size: 200% 200%;
+    border: 2px solid #004d40;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 15px;
+    padding: 25px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s, background-position 0.4s;
+    animation: gradient-shift 5s ease infinite;
+    cursor: pointer;
+}
+
+
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+
+.header p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+.table-item {
+    position: relative;
+    background: linear-gradient(135deg, #7c191c 0%, #fad0c4 100%);
+    background-size: 200% 200%;
+    border: 2px solid #004d40;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 15px;
+    padding: 25px;
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.4s, box-shadow 0.4s, border-color 0.4s, background-position 0.4s;
+    animation: gradient-shift 5s ease infinite;
+    cursor: pointer;
+}
+
+.table-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="1.5" fill="%23fff"%3E%3Canimate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" begin="0s"/%3E%3C/circle%3E%3Ccircle cx="20" cy="20" r="1.5" fill="%23fff"%3E%3Canimate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" begin="0.5s"/%3E%3C/circle%3E%3Ccircle cx="80" cy="30" r="1.5" fill="%23fff"%3E%3Canimate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" begin="1s"/%3E%3C/circle%3E%3Ccircle cx="30" cy="80" r="1.5" fill="%23fff"%3E%3Canimate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" begin="0.8s"/%3E%3C/circle%3E%3Ccircle cx="60" cy="60" r="1.5" fill="%23fff"%3E%3Canimate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" begin="1.2s"/%3E%3C/circle%3E%3C/svg%3E') no-repeat;
+    pointer-events: none;
+}
+
+.table-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    border-color: #00796b;
+}
+
+.table-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    transition: opacity 0.4s;
+}
+
+.table-item:hover img {
+    opacity: 0.85;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 25px;
+}
+/* Search Bar Container */
+.search-bar {
+    display: flex; /* Align input and button side by side */
+    justify-content: center; /* Center the elements */
+    align-items: center; /* Vertically align items */
+    margin: 25px; /* Space around the search bar */
+}
+
+/* Search Input Field */
+.search-bar input[type="text"] {
+    padding: 12px 20px; /* Padding for the input */
+    width: 100%; /* Full width */
+    max-width: 450px; /* Maximum width */
+    border: 2px solid #ff6b6b; /* Vibrant border color */
+    border-radius: 10px; /* Rounded corners */
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition */
+    font-size: 18px; /* Font size */
+    font-family: 'Dancing Script', cursive; /* Dreamy font */
+    outline: none; /* Remove default outline */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+}
+
+/* Focus Effect */
+.search-bar input[type="text"]:focus {
+    border-color: #ff1493; /* Change border color on focus */
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5), 0 0 20px rgba(255, 20, 147, 0.5); /* Glowing effect */
+    transform: scale(1.05); /* Slightly enlarge input */
+}
+
+/* Search Button */
+.search-bar button {
+    padding: 12px 20px; /* Padding for the button */
+    margin-left: 10px; /* Space between input and button */
+    background-color: #ff6b6b; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    font-family: 'Dancing Script', cursive; /* Dreamy font */
+}
+
+/* Button Hover Effect */
+.search-bar button:hover {
+    background-color: #ff1493; /* Darker shade on hover */
+    transform: scale(1.1); /* Slightly enlarge button */
+}
+
+/* Dancing Animation */
+@keyframes dance {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Apply the dancing animation */
+.search-bar input[type="text"],
+.search-bar button {
+    animation: dance 1s infinite; /* Dance effect */
+}
+
+.search-bar input[type="text"] {
+    padding: 12px;
+    width: 85%;
+    max-width: 450px;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #00796b;
+}
+
+@keyframes gradient-shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes vintage-bg {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes smooth-fade {
+    0% {
+        opacity: 0.9;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.header, .table-item {
+    animation: smooth-fade 3s infinite alternate;
+}
+
+.container {
+    animation: vintage-bg 5s infinite alternate;
+    background: linear-gradient(to bottom right, #473a2c, #f5d0c5, #cbb1a3);
+    background-size: 400% 400%;
+}
+
+/* Container with Animated Background */
+.container {
+    position: relative; /* Position relative for absolute positioning of the overlay */
+    overflow: hidden; /* Hide overflow for the overlay */
+    background-image: url('https://wallpaperaccess.com/full/5540324.jpg'); /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+/* Light Reflection Overlay */
+.container::before {
+    content: ''; /* Required for pseudo-element */
+    position: absolute; /* Position absolute to cover the container */
+    top: 0; /* Cover the top */
+    left: 0; /* Cover the left */
+    right: 0; /* Cover the right */
+    bottom: 0; /* Cover the bottom */
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 100%); /* Light reflection gradient */
+    opacity: 0.5; /* Semi-transparent */
+    animation: light-reflection 3s linear infinite; /* Animation for light reflection */
+}
+
+/* Keyframes for Light Reflection Animation */
+@keyframes light-reflection {
+    0% {
+        transform: translateX(-100%); /* Start from the left */
+    }
+    100% {
+        transform: translateX(100%); /* Move to the right */
+    }
+}
+
+/* Water Movement Effect */
+@keyframes water-move {
+    0% {
+        background-position: 0% 0%; /* Start position */
+    }
+    50% {
+        background-position: 100% 100%; /* Move diagonally */
+    }
+    100% {
+        background-position: 0% 0%; /* Return to start position */
+    }
+}
+
+/* Apply the water movement animation */
+.container {
+    animation: water-move 10s linear infinite; /* Animation for water movement */
+}
+.search-bar {
+    text-align: center;
+    margin: 25px;
+    display: flex; /* Enables side-by-side alignment */
+    justify-content: center; /* Centers the elements horizontally */
+    align-items: center; /* Vertically aligns the items */
+    gap: 10px; /* Adds space between the input and button */
+}
+
+.search-bar input[type="text"] {
+    padding: 12px;
+    width: 70%; /* Adjust as needed */
+    max-width: 400px;
+    border: 2px solid #488f83;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.search-bar input[type="text"]:focus {
+    border-color: #00796b;
+}
+
+.contact-button {
+    background-color: #00695c; /* Deep green button */
+    color: #e0f7fa; /* Light text color */
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 2px solid #004d40;
+    border-radius: 10px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.contact-button:hover {
+    background-color: #00796b; /* Light green hover effect */
+    border-color: #00796b;
+    transform: scale(1.1); /* Slight zoom effect */
+    color: #fff; /* White text on hover */
+}
+.logo {
+    width: 150px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Keeps it inline with other elements if necessary */
+}
+.footer {
+    background-color: #3a063b;
+    color: #e0f7fa;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+}
+
+.footer-container {
+
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-link {
+    margin:  20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+.table-item h3,
+.table-item p {
+    color: black; /* Set the font color to black */
+}
+.description {
+    max-width: 600px; /* Increase max-width for a larger box */
+    color: black; /* Set text color to black */
+    padding: 30px; /* Increase padding for more space inside the box */
+    background-image: url('https://th.bing.com/th/id/OIP.p792zrkZLZZ9I_RLefIZrgHaEo?rs=1&pid=ImgDetMain'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire box */
+    background-position: center; /* Centers the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Allow height to adjust based on content */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align content to the top */
+}
+.reviews {
+    background: linear-gradient(270deg, brown, #4b0082, #ff1493);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reviews h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.review {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.review strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.footer {
+    background-color: #5f0c8f; /* Background color for the footer */
+    color: white; /* Text color */
+    padding: 10px 0; /* Reduced padding for a thinner footer */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the sections */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 1200px; /* Max width for the footer */
+    margin: auto; /* Center the footer */
+}
+
+.social-media, .payment-methods, .footer-links {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 0 10px; /* Margin between sections */
+}
+
+.social-media h3, .payment-methods h3, .footer-links h3 {
+    margin-bottom: 5px; /* Space below headings */
+    font-size: 1.1em; /* Slightly smaller heading size */
+    border-bottom: 1px solid white; /* Underline for headings */
+    padding-bottom: 5px; /* Padding below headings */
+}
+
+.footer-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links ul li {
+    margin: 3px 0; /* Space between list items */
+}
+
+.footer-links ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Link color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links ul li a:hover {
+    color: #ffccff; /* Change color on hover */
+}
+
+.social-icons, .payment-icons {
+    display: flex; /* Align icons horizontally */
+    gap: 10px; /* Space between icons */
+    justify-content: center; /* Center icons */
+}
+
+.social-icons a img, .payment-icons img {
+    width: 30px; /* Set a fixed width for icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-icons a img:hover, .payment-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+.footer-bottom {
+    text-align: center; /* Center text */
+    padding: 5px 0; /* Reduced padding for bottom text */
+    background-color: #860a4f; /* A darker shade for contrast */
+    margin-top: 10px; /* Space above the bottom section */
+    font-size: 0.9em; /* Smaller font size for bottom text */
+}
+
+.footer-bottom p {
+    margin: 2px 0; /* Space between bottom text paragraphs */
+}
+

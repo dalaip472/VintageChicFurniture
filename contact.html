@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="table.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(222, 135, 196);
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .header-container {
+            display: flex;
+            justify-content: space-between; /* Space between logo and buttons */
+            align-items: center; 
+            padding: 10px;
+        }
+        .button-container {
+            display: flex;
+            gap: 10px; /* Space between buttons */
+        }
+        .button-container button {
+            background-color: #ce5792; /* Button background color */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 15px; /* Padding for buttons */
+            color: white; /* Text color */
+            cursor: pointer; /* Pointer cursor on hover */
+        }
+        .button-container button a {
+            text-decoration: none; /* Remove underline from links */
+            color: white; /* Text color */
+        }
+        .main-container {
+            display: flex; /* Use flexbox for layout */
+            margin-top: 20px;
+        }
+        .form-container {
+            flex: 1; /* Allow the form container to grow */
+            max-width: 600px; /* Limit the width of the form */
+            background: rgb(44, 2, 44);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 20px; /* Space between form and map */
+        }
+        h1 {
+            text-align: center;
+            color: #ce5792;
+        }
+        p {
+            text-align: center;
+            color: white;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: white; /* Label color */
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: purple; /* Purple background */
+            color: white; /* White text */
+            font-family: cursive;
+        }
+        input[type="submit"] {
+            background-color: #ce5792;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #9c135e;
+        }
+        .contact-info {
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
+        .map-container {
+            flex: 1; /* Allow the map container to grow */
+        }
+        iframe {
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            border: 0; /* Remove border */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+        .footer-container {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-container" style="display: flex; align-items: center; justify-content: space-between;">
+        <img src="pob.png" alt="Table Logo" class="logo">
+        <a href="table.html">
+          <img src="pob.png" alt="Table Logo" class="logo">
+      </a>
+        <div style="flex-grow: 1; text-align: center;">
+            <h1 style="margin: 0;">Vintage Chic Furniture</h1>
+            <p style="margin: 0; color: white;">Crafting moments that last for generations - tables that make memories</p>
+        </div>
+        <div class="button-container">
+            <button class="hum"><a href="table.html" class="home"><b>Home</b></a></button>
+            <button class="con"><a href="contact.html" class="us"><b>Contact Us</b></a></button>
+        </div>
+    </div>
+</div>
+    
+    <div class="main-container">
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or comments, please fill out the form below.</p>
+
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Email: vintagechicfurniture@gmail.com</p>
+                <p>Phone: (+501) 653-3236</p>
+                <p>Address: Cristo Rey Village, Corozal District</p>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509198!2d144.9537353153163!3d-37.81627997975157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11f3b3%3A0x5045675218ceed0!2sCristo%20Rey%20Village%2C%20Corozal%20District!5e0!3m2!1sen!2s!4v1633031234567!5m2!1sen!2s" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+   
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-media">
+                <h3>Follow Us On:</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://wa.me/5016533236" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" class="social-icon">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <div class="payment-methods">
+                <h3>We Accept:</h3>
+                <div class="payment-icons">
+                    <img src="VISA.jpeg" alt="Visa">
+                    <img src="MASTER.jpeg" alt="MasterCard">
+                    <img src="PAY.jpeg" alt="PayPal">
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="table.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vintage Chic Furniture by Narges Pech. All rights reserved.</p>
+            <p>Your trusted source for quality dining tables that create lasting memories.</p>
+        </div>
+    </footer>
